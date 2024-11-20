@@ -1,12 +1,14 @@
 ## FundMe 
 
-**FundMe is a basic test project for learning purposes.**
+FundMe is a basic test project designed for learning purposes. 
+It demonstrates how to interact with smart contracts, deploy them to a blockchain, and leverage Chainlink data feeds for real-time price data. 
 
-- Chainlink data feeds is implemented. 
-- There are scripts for deploying and interacting programatically with the contract.
-- As well as there is a helperConfig so we can pass a blockchain specific info.
-- Testing consists of unit tests, scripts interactions tests and mock for testing locally with anvil.
-- Price funtions are in a library.
+### Features
+- Chainlink Data Feeds: Integrated Chainlink oracles for fetching real-time price data.
+- Deployment Scripts: Scripts for deploying the contract to various blockchains.
+- Testing: Unit, mock, fork and integration tests are present
+- Helper Configuration: Blockchain-specific configuration for flexible deployment across different environments.
+- Price Functions Library: Encapsulated price-related functions in a separate library for clean and reusable code.
 
 ### Build
 
