@@ -24,7 +24,7 @@ contract FundMeTestIntegration is Test {
         FundFundMe fundFundMe = new FundFundMe();
         vm.prank(USER);
         vm.deal(USER, 1e18);
-        fundFundMe.fundFundMe(address(fundMe));
+        fundFundMe.fundFundMe{value: SEND_VALUE}(address(fundMe));
 
         WithdrawFundMe withdrawFundMe = new WithdrawFundMe();
         withdrawFundMe.withdrawFundMe(address(fundMe));
