@@ -1,19 +1,14 @@
-## Foundry
+## FundMe 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+FundMe is a basic test project designed for learning purposes. 
+It demonstrates how to interact with smart contracts, deploy them to a blockchain, and leverage Chainlink data feeds for real-time price data. 
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
+### Features
+- Chainlink Data Feeds: Integrated Chainlink oracles for fetching real-time price data.
+- Deployment Scripts: Scripts for deploying the contract to various blockchains.
+- Testing: Unit, mock, fork and integration tests are present
+- Helper Configuration: Blockchain-specific configuration for flexible deployment across different environments.
+- Price Functions Library: Encapsulated price-related functions in a separate library for clean and reusable code.
 
 ### Build
 
@@ -27,40 +22,8 @@ $ forge build
 $ forge test
 ```
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+forge script script/DeployFundMe.s.sol
 ```
